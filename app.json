@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "page/grid/grid",
+    "page/girdinfo/gridinfo"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

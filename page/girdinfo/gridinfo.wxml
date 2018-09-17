@@ -1,0 +1,64 @@
+<!--pages/gridinfo/gridinfo.wxml-->
+<!-->
+<view class='pro-top'>
+  <image src='{{toppic}}' />
+</view>
+
+<view class='pro-mid'>
+  <scroll-view class='pro-scroll' scroll-x='true' style="white-space: nowrap; display: flex">
+    <block class='pro-lists' wx:for="{{proList}}">
+      <view class='pro-item' style='display: inline-block' bindtap='toProListInfo' data-index='{{index}}'>
+        <image class="{{item.showView?'pro-itempic_show':'pro-itempic_hide'}}" src='{{item.pic}}' />
+        <icon class="{{item.showView?'pro-selectpic_show':'pro-selectpic_hide'}}" type='success' size='20' color='#03a964' />
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<view class='pro-selecttitle'>
+  <text>选择</text>
+</view>
+
+<view class='pro-productlists'>
+  <view class='pro-productitem' wx:for="{{productList}}">
+    <image class='pro-productpic' bindtap='toProductInfo' data-index='{{index}}' src='{{item.pic}}' />
+    <text class='pro-productname' bindtap='toProductInfo' data-index='{{index}}'>{{item.name}}</text>
+    <text class='pro-productprice' bindtap='toProductInfo' data-index='{{index}}'>￥{{item.price}}</text>
+    <image class='pro-productadd' src='/images/img_add.jpg' bindtap='toProductAdd' data-index='{{index}}' />
+  </view>
+</view>
+
+<view class='pro-copyright'>
+  <view class='pro-copyrightitem'>
+    <text class='pro-copyrightmsg' bindtap='toCopyrightMsg'>使用须知</text>
+    <text class='pro-copyrightprivate' bindtap='toCoprightPrivate'>隐私权政策</text>
+  </view>
+</view>
+
+<view class='pro-bottominfo'>
+  <text class='pro-bottomprize'>0份礼品</text>
+  <view class='pro-bottompriceinfo'>
+    <text class='pro-bottomprice'>￥</text>
+    <text class='pro-bottomprice2'>0.00</text>
+  </view>
+  <view class='pro-bottompay' bindtap='toPayInfo'>
+    <text>购买</text>
+  </view>
+</view>
+
+<view class="pro-dialog {{isShowDialog?'isDialogShow':'isDialogHide'}}">
+  <view class='pro-dialogdiv'>
+    <view class='pro-dialog-topdiv' />
+    <view class='pro-dialog-botdiv' />
+    <view class='pro-dialog-content'>
+      <image class='pro-dialog-pic' src='{{dialogPic}}' />
+      <image class='pro-dialog-close' src='/images/img_gridinfo_close.jpg' bindtap='toDialogClose' />
+      <text class='pro-dailog-name'>{{dialogName}}</text>
+      <text class='pro-dailog-price'>￥ {{dialogPrice}}</text>
+      <view class='pro-dialog-line'></view>
+      <view class='pro-dialog-scroll'>
+
+      </view>
+    </view>
+  </view>
+</view>

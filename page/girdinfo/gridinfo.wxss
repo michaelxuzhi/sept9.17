@@ -1,0 +1,313 @@
+/* pages/gridinfo/gridinfo.wxss 
+.pro-top {
+  width: 100%;
+  height: 330rpx;
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+
+.pro-top image {
+  width: 75%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.pro-mid {
+  width: 100%;
+  height: 110rpx;
+  padding: 0;
+  margin-top: 35rpx;
+  text-align: center;
+}
+
+.pro-scroll {
+  width: 92%;
+  height: 140rpx;
+  padding: 0;
+  margin-left: 4%;
+}
+
+.pro-item {
+  width: 180rpx;
+  height: 100%;
+  text-align: center;
+}
+
+.pro-itempic_show {
+  width: 164rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+  border: 3rpx solid #03a964;  
+}
+
+.pro-itempic_hide {
+  width: 164rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+  border: 0;  
+}
+
+.pro-selectpic_show {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 147rpx;
+  top: 10rpx;
+  display: block;
+}
+
+.pro-selectpic_hide {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 147rpx;
+  top: 10rpx;
+  display: none;
+}
+
+.pro-selecttitle {
+  margin-left: 40rpx;
+  margin-top: 60rpx;
+}
+
+.pro-selecttitle text {
+  font-size: 30rpx;
+  color: #292929;
+}
+
+.pro-productlists {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 10rpx;
+}
+
+.pro-productitem {
+  width: 90%;
+  height: 164rpx;
+  margin: auto;
+  border-bottom: 3rpx solid #dddddd;
+}
+
+.pro-productpic {
+  float: left;
+  width: 130rpx;
+  margin-top: 17rpx;
+  height: 130rpx;
+}
+
+.pro-productname {
+  position: absolute;
+  font-size: 32rpx;
+  color: #252525;
+  margin-top: 36rpx;
+  left: 180rpx;
+}
+
+.pro-productprice {
+  position: absolute;
+  font-size: 32rpx;
+  color: #252525;
+  left: 180rpx;
+  margin-top: 92rpx;
+}
+
+.pro-productadd {
+  float: right;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 54rpx;
+  margin-right: 15rpx;
+}
+
+.pro-copyright {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pro-copyrightitem {
+  margin: auto;
+  padding: 0;
+  margin-top: 50rpx;
+  margin-bottom: 190rpx;
+}
+
+.pro-copyrightmsg {
+  font-size: 26rpx;
+  color: #03a964;
+  margin-right: 40rpx;
+  text-decoration: underline;
+}
+
+.pro-copyrightprivate {
+  font-size: 26rpx;
+  color: #03a964;
+  text-decoration: underline;
+}
+
+.pro-bottominfo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 130rpx;
+  background: white;
+  border-top: 3rpx solid #dddddd;
+}
+
+.pro-bottomprize {
+  position: absolute;
+  font-size: 24rpx;
+  color: #b3b3b3;
+  left: 40rpx;
+  top: 30rpx;
+}
+
+.pro-bottompriceinfo {
+  position: absolute;
+  left: 40rpx;
+  top: 60rpx;
+  text-align: left;
+}
+
+.pro-bottomprice {
+  font-size: 24rpx;
+  color: #252525;
+  font-weight: bold;
+}
+
+.pro-bottomprice2 {
+  font-size: 30rpx;
+  color: #252525;
+  font-weight: bold;
+}
+
+.pro-bottompay {
+  float: right;
+  width: 216rpx;
+  height: 74rpx;
+  background: #f7f7f7;
+  margin-top: 30rpx;
+  margin-right: 40rpx;
+  border-radius: 30rpx;
+  text-align: center;
+}
+
+.pro-bottompay text {
+  height: 100%;
+  font-size: 35rpx;
+  color: #b3b3b3;
+  line-height: 74rpx;
+  overflow: hidden;
+}
+
+.isDialogShow {
+  display: block;
+}
+
+.isDialogHide {
+  display: none;
+}
+
+.pro-dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 2;
+  text-align: center;
+}
+
+.pro-dialogdiv {
+  position: absolute;
+  width: 100%;
+  height: 970rpx;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pro-dialog-topdiv {
+  width: 280rpx;
+  height: 280rpx;
+  background: white;
+  margin: auto;
+  border-radius: 140rpx;
+  overflow: hidden;
+}
+
+.pro-dialog-botdiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -140rpx;
+  background: white;
+  overflow: hidden;
+  border-top-left-radius: 18rpx;
+  border-top-right-radius: 18rpx;
+}
+
+.pro-dialog-content {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  left: 5%;
+  top: 0;
+}
+
+.pro-dialog-pic {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0;
+  padding: 0;
+  margin-top: 48rpx;
+}
+
+.pro-dialog-close {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  left: -10rpx;
+  top: 170rpx;
+}
+
+.pro-dailog-name {
+  position: absolute;
+  font-size: 32rpx;
+  color: black;
+  left: 0;
+  top: 300rpx;
+}
+
+.pro-dailog-price {
+  position: absolute;
+  font-size: 32rpx;
+  color: black;
+  left: 0;
+  top: 360rpx;
+}
+
+.pro-dialog-line {
+  width: 100%;
+  height: 3rpx;
+  margin-top: 190rpx;
+  background: #b3b3b3;
+}
+
+.pro-dialog-scroll {
+  width: 100%;
+  height: 100%;
+  margin-top: 10rpx;
+  overflow: hidden;
+}
+
+*/

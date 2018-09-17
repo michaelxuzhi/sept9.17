@@ -1,0 +1,33 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color='#dbdbdb' indicator-active-color='#00ae61'>
+  <block wx:for="{{imgUrls}}" wx:key="userInfoListId">
+    <swiper-item>
+      <image src="{{item.toppic}}" class="slide-image" bindtap='toBannerInfo' data-index='{{index}}' width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="pro-body">
+
+  <!-- //这是swiper和items-list之间的文本 
+  <text class='pro-title'>选择你的心情</text> 
+  -->
+
+  <view class='items-list'>
+    <block class='pro-item' wx:for="{{proList}}" wx:key="userInfoListId">
+      <view class='pro-bodydiv' bindtap='toProListInfo' data-index='{{index}}'>
+        <image class='pro-img' src='{{item.toppic}}' />
+        <view class='pro-name'>{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class='pro-bottom'>
+    <view>
+      <view bindtap='toProHistory'>
+        <image class='pro-p' src='/images/2-2.png' />
+      </view>
+      <text class='pro-history'>Create By Michael Xu</text>
+    </view>
+  </view>
+
+</view>
